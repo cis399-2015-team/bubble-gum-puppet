@@ -1,4 +1,5 @@
 node ip-10-0-7-86 {
+	include sshd
     }
 
     node ip-10-0-7-88 {
