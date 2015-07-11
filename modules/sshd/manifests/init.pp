@@ -11,15 +11,11 @@ class sshd {
 		require => Package["openssh-server"],
 	}
 
-	service { "sshd":
-		enable     => true,
-		ensure     => running,
-		hasstatus  => true,
-		hasrestart => true,
-		require    => [ Package["openssh-server"],
-			       	    File["/etc/ssh/sshd_config"], ],
-		subscribe  => File["/etc/ssh/sshd_config"],
-
+	service { "ssh":
+		enable	=> true,
+		ensure	=> running,
+		require	=>	[ Package["openssh-server"],
+				  File["/etc/ssh/sshd_config"], ],
 	}
 
 	ssh_authorized_key{ "yuanfei-pair":
