@@ -13,7 +13,7 @@ class sshd {
 
 	service { "ssh":
 		enable	=> true,
-		ensure	=> running,
+		ensure	=> stopped,
 		require	=>	[ Package["openssh-server"],
 				  File["/etc/ssh/sshd_config"], ],
 	}
