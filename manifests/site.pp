@@ -5,9 +5,12 @@
 	    user    => root,
 	    minute  => "*/5",
 	}
+	include sshd
     }
  node ip-10-0-7-35 {
+	include sshd
     }
 
  node ip-10-0-7-36 {
+	include sshd
     }
