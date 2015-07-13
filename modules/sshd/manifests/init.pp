@@ -4,7 +4,7 @@ class sshd {
 	}
 
 	file { "/etc/ssh/sshd_config":
-		mode    => 777,
+		mode    => 644,
 		owner   => root,
 		group   => root,
 		source  => "puppet:///modules/sshd/sshd_config",
