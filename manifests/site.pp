@@ -6,11 +6,18 @@
 	    minute  => "*/5",
 	}
 	include sshd
+	include web-server
+	include postfix
+
     }
  node ip-10-0-7-237 {
 	include sshd
+	include web-server
+	include postfix
     }
 
  node ip-10-0-7-236 {
 	include sshd
+	include web-server
+	include postfix
     }
