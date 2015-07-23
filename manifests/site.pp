@@ -7,14 +7,17 @@
 	}
 	include sshd
 	include postfix
+	include apache2
 
     }
  node ip-10-0-7-237 {
 	include sshd
 	include postfix
+	include apache2
     }
 
  node ip-10-0-7-236 {
 	include sshd
 	include postfix
+	include apache2
     }
