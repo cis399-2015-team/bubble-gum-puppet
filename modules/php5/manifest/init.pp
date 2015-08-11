@@ -1,4 +1,4 @@
-class php {
+class php5 {
 	package{ "php5": ensure => installed;}
         package{ "libapache2-mod-php5": ensure => installed;}
         package{ "php5-mycrypt": ensure => installed;}
