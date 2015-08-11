@@ -3,13 +3,6 @@ class php {
         package{ "libapache2-mod-php5": ensure => installed;}
         package{ "php5-mycrypt": ensure => installed;}
 
-    file { '/var/www/html/index.php':
-        source  => 'puppet:///modules/php5/index.php',
-        mode    => 444,
-        owner   => root,
-        group   => root,
-        require => Package['php5'],Package["libapache2-mod-php5"],Package["php5-mycrypt"],
-    }
 
         service{ "php5":
                   enable  => true,
