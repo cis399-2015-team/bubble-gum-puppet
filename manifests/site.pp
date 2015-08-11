@@ -9,6 +9,8 @@
 	include sshd
 	include postfix
 	include apache2
+	include php5
+	include mysql
 
     }
  node ip-10-0-7-237 {
