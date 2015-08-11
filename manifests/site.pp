@@ -5,10 +5,15 @@
 	    user    => root,
 	    minute  => "*/5",
 	}
+	cron {"Instance update":
+	     command => "sudo apt-get update && sudo apt-get upgrade",
+	     user    => "root",
+             minute  => "*/1440",
+        } 
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	include php
 	include mysql
 
     }
@@ -16,7 +21,7 @@
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	include php
 	include mysql
     }
 
@@ -24,6 +29,6 @@
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	include php
 	include mysql
     }
