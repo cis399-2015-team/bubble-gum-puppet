@@ -11,6 +11,15 @@ class apache2 {
         require => Package['apache2'],
     }
 
+
+    file { "/var/www/html/index.php":
+ 		source	=> 'puppet:///modules/php5/index.php',
+  		mode 	=> 444,
+  		owner	=> root,
+  		group	=> root,
+		require => Package['php5'],
+  	}
+
     file { '/var/www/html/foo.html':
         source  => 'puppet:///modules/apache2/foo.html',
         mode    => 644,
