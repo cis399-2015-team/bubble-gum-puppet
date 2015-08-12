@@ -9,7 +9,7 @@
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	
 	include mysql
 
     }
@@ -17,7 +17,7 @@
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	
 	include mysql
     }
 
@@ -25,6 +25,6 @@
 	include sshd
 	include postfix
 	include apache2
-	include php5
+	
 	include mysql
     }
