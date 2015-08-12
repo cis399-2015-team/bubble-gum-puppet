@@ -6,13 +6,9 @@ class mysql {
         mode    => 644,
         owner   => root,
         group   => root,
-        require => Package["mysql-server"],Package["php5-mysql"],
+        require => Package["mysql"],
     }
 
-   service{ "mysql":
-                  enable  => true,
-                  ensure  => running,
-                  require => Package["mysql"],
-        }
+ 
 	
 }
