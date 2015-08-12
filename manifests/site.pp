@@ -1,5 +1,5 @@
  # update /etc/puppet on puppet master (use puppet master node name)
- node ip-10-0-7-57 {
+ node ip-10-0-3-238 {
     	cron { "puppet update":
 	    command => "cd /etc/puppet && git pull -q origin master",
 	    user    => root,
