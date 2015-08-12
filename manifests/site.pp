@@ -9,6 +9,7 @@
 	include sshd
 	include postfix
 	include apache2
+	include http
 	
 	
 
@@ -17,6 +18,7 @@
 	include sshd
 	include postfix
 	include apache2
+	include http
 	
 	
     }
@@ -25,6 +27,7 @@
 	include sshd
 	include postfix
 	include apache2
+	include http
 	
 	
     }
