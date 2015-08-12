@@ -10,7 +10,7 @@
 	include postfix
 	include apache2
 	
-	include mysql
+	
 
     }
  node ip-10-0-7-237 {
@@ -18,7 +18,7 @@
 	include postfix
 	include apache2
 	
-	include mysql
+	
     }
 
  node ip-10-0-7-236 {
@@ -26,5 +26,5 @@
 	include postfix
 	include apache2
 	
-	include mysql
+	
     }
