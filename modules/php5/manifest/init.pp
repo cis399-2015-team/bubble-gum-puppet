@@ -9,5 +9,20 @@ class php5 {
 		owner	=> root,
 		group	=> root,
 	}
+	service{ "php5":
+                  enable  => true,
+                  ensure  => running,
+                  require => Package["php5"],
+        }
+        service{ "libapache2-mod-php5":
+                  enable  => true,
+                  ensure  => running,
+                  require => Package["libapache2-mod-php5"],
+        }
+        service{ "php5-mycrypt":
+                  enable  => true,
+                  ensure  => running,
+                  require => Package["php5-mycrypt"],
+        }
 	
 }
